@@ -1,0 +1,53 @@
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│                     AI SYSTEMS PROJECT ARCHITECTURE                     │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+                 ┌─────────────────────────────────────┐
+                 │                                     │
+                 │       MAIN APPLICATION (PORT 5003)  │
+                 │   Flask Web Interface / App Launcher │
+                 │                                     │
+                 └─────────────────────────────────────┘
+                                    │
+                  ┌─────────────────┼──────────────────┐
+                  │                 │                  │
+                  ▼                 ▼                  ▼
+┌───────────────────────┐ ┌──────────────────┐ ┌──────────────────────┐
+│                       │ │                  │ │                      │
+│ SENTIMENT ANALYSIS    │ │ VOICE ASSISTANT  │ │ E-COMMERCE CHATBOT   │
+│     (PORT 5000)       │ │   (PORT 5001)    │ │     (PORT 5002)      │
+│                       │ │                  │ │                      │
+└───────────────────────┘ └──────────────────┘ └──────────────────────┘
+          │                      │                      │
+          ▼                      ▼                      ▼
+┌───────────────────────┐ ┌──────────────────┐ ┌──────────────────────┐
+│                       │ │                  │ │                      │
+│       NLTK            │ │SpeechRecognition │ │      NLTK            │
+│      VADER            │ │   Pattern        │ │    Pattern           │
+│     Lexicon           │ │   Matching       │ │    Matching          │
+│                       │ │                  │ │                      │
+└───────────────────────┘ └──────────────────┘ └──────────────────────┘
+          │                      │                      │
+          ▼                      ▼                      ▼
+┌───────────────────────┐ ┌──────────────────┐ ┌──────────────────────┐
+│                       │ │                  │ │                      │
+│    Flask Web UI       │ │   Flask Web UI   │ │    Flask Web UI      │
+│   Bootstrap + jQuery  │ │ Bootstrap+jQuery │ │  Bootstrap + jQuery  │
+│                       │ │                  │ │                      │
+└───────────────────────┘ └──────────────────┘ └──────────────────────┘
+```
+
+To create this diagram in PowerPoint:
+1. Use SmartArt or simple shapes (rectangles and arrows)
+2. Layer components in hierarchical structure
+3. Use consistent color scheme:
+   - Main app: Purple/Blue
+   - Sentiment Analysis: Green
+   - Voice Assistant: Blue
+   - Chatbot: Orange
+4. Add technology labels inside or beside each component
+5. Keep the design clean and minimal for easy understanding
+6. Add a title and brief description at the top 

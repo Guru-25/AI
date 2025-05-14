@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #4a6fdc 0%, #6d5cc0 100%);
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 4rem;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-img-container {
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e9ecef;
+        }
+        
+        .card-img-container img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card-body {
+            padding: 2rem;
+        }
+        
+        .card-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .feature-icon {
+            background-color: #e3f2fd;
+            color: #4a6fdc;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn-custom {
+            background-color: #4a6fdc;
+            border: none;
+            border-radius: 30px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-custom:hover {
+            background-color: #3a5bb9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(74, 111, 220, 0.4);
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .github-link {
+            color: #4a6fdc;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        .github-link:hover {
+            color: #3a5bb9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">AI Project Portfolio</h1>
+            <p class="lead mb-5">Implementing key components of intelligent systems: Sentiment Analysis, Voice Assistant, and E-commerce Chatbot</p>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="container mb-5">
+        <div class="row">
+            <!-- Sentiment Analysis Card -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://cdn-images-1.medium.com/max/1200/1*YM2HXc7f4PYot9OiYg3Rtw.png" alt="Sentiment Analysis">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Sentiment Analysis</h3>
+                        <p class="card-text flex-grow-1">
+                            A machine learning model that identifies and categorizes opinions expressed in text data as positive, negative, or neutral.
+                        </p>
+                        <ul class="mb-4">
+                            <li>Real-time text analysis</li>
+                            <li>Visual score representation</li>
+                            <li>Uses NLTK's VADER lexicon</li>
+                        </ul>
+                        <a href="/sentiment" class="btn btn-custom">Launch Application</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Voice Assistant Card -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/media/1df1b3689355608b2f441f19911a3dfe.gif" alt="Voice Assistant">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="feature-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3 class="card-title">Voice Assistant</h3>
+                        <p class="card-text flex-grow-1">
+                            An interactive assistant that recognizes speech, processes natural language, and responds to voice commands.
+                        </p>
+                        <ul class="mb-4">
+                            <li>Speech-to-text conversion</li>
+                            <li>Natural language understanding</li>
+                            <li>Real-time interactions</li>
+                        </ul>
+                        <a href="/voice" class="btn btn-custom">Launch Application</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chatbot Card -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://cdn.dribbble.com/users/1650149/screenshots/16075425/media/3840a8c3afd8a2e1ed0c5806a8526982.gif" alt="E-commerce Chatbot">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="card-title">E-commerce Chatbot</h3>
+                        <p class="card-text flex-grow-1">
+                            A specialized chatbot designed to provide customer support for online shopping, answering queries about products, orders, and more.
+                        </p>
+                        <ul class="mb-4">
+                            <li>Domain-specific knowledge</li>
+                            <li>Natural language processing</li>
+                            <li>Interactive conversational interface</li>
+                        </ul>
+                        <a href="/chatbot" class="btn btn-custom">Launch Application</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technologies Section -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-5">Technologies Used</h2>
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-4">
+                <div class="p-3">
+                    <i class="fab fa-python fa-3x mb-3 text-primary"></i>
+                    <h5>Python</h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="p-3">
+                    <i class="fas fa-flask fa-3x mb-3 text-primary"></i>
+                    <h5>Flask</h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="p-3">
+                    <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                    <h5>NLTK</h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="p-3">
+                    <i class="fas fa-microphone-alt fa-3x mb-3 text-primary"></i>
+                    <h5>SpeechRecognition</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Implementation Details -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Implementation Details</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4>Sentiment Analysis</h4>
+                <p>
+                    This implementation uses NLTK's VADER (Valence Aware Dictionary and sEntiment Reasoner) lexicon-based sentiment analyzer. VADER is specifically attuned to sentiments expressed in social media and works well with short texts.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>Voice Assistant</h4>
+                <p>
+                    The voice assistant uses Python's SpeechRecognition library to convert speech to text and a pattern-matching system to identify commands. It can provide information about time, date, and respond to basic conversational queries.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>E-commerce Chatbot</h4>
+                <p>
+                    The chatbot implements a knowledge-based approach using a combination of pattern matching and natural language processing techniques. It specializes in e-commerce domain queries related to products, shipping, returns, and customer support.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Developed as part of the AI Systems Assignment</p>
+            <p>
+                <a href="#" class="github-link">
+                    <i class="fab fa-github me-2"></i>View Source Code
+                </a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
